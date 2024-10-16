@@ -1,4 +1,15 @@
+use std::str::Chars;
+
 use tokens::Token;
+use tokens::Tokens;
+
+struct Lexer<'l> {
+    input: &'l str,
+    chars: Chars<'l>,
+}
+
+impl<'l> Lexer<'l> {
+}
 
 pub fn lexer(input: &str) -> Vec<Token> {
     let mut tokens = Vec::new();

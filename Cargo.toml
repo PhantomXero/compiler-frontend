@@ -1,0 +1,15 @@
+[package]
+name = "compiler-frontend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lexer = { path = "./lexer" }
+parser = {path = "./parser" }
+
+[workspace]
+members = [
+    "lexer",
+    "parser",
+    "tokens",
+]
